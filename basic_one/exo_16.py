@@ -1,7 +1,12 @@
+ #Python program to calculate the difference between a given number and 17. If the number is greater than 17, return twice the absolute difference.
 
-python
-def calculate_difference(number):
-    if number > 17:
-        return 2 * abs(number - 17)
+def difference(n):
+    if n > 17:
+        return 2 * abs(n - 17)
     else:
-        return 17 - number
+        return abs(n - 17)
+
+# Get user input
+num = float(input("Enter a number: "))
+print("Result:", difference(num))
+
